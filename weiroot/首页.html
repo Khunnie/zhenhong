@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>正宏</title>
+        <link rel="stylesheet" type="text/css" href="style/base.css">
+        <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="style/index.css">
+        <link rel="stylesheet" type="text/css" href="style/css.css">
+        <link rel="stylesheet" type="text/css" href="style/calendar.css">
+        <link rel="stylesheet" type="text/css" href="style/SelectTel.css">
+        <style>
+            .swiper-button-prev.swiper-button-disabled{
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="global" id="indexPage">
+            <div class="shoptop" style="position: relative;">
+                <div style="position: absolute; left:0.8rem;top: 0.8rem; " class="logo-nav">
+                    
+                </div>
+                <div style="position: absolute; right: 0.8rem; top: 1rem;" id="mm-menu-toggle"  class="mm-menu-toggle">
+                    <a href="javascript:;" class="ico-zz">
+                    </a>
+                 
+                </div>
+                 <!--侧滑  -->
+                <div id="wrapper" class="wrapper"></div>
+                <nav id="nav-menu">
+                    <ul class="form">
+                        <li>
+                            <h4>
+                                <a href="javascript:;">
+                                    <i class="ico-shou"></i>首页
+                                </a>
+                            </h4>
+                        </li>
+                        <li>
+                            <h4>
+                                <a href="javascript:;">
+                                    <i class="ico-ji"></i>机票预订
+                                </a>
+                            </h4>
+                        </li>
+                         <li>
+                            <h4>
+                                <a href="javascript:;">
+                                    <i class="ico-you"></i>旅游度假
+                                    <i class="ico-nav"></i>
+                                </a>
+                            </h4>
+                            <ul class="menu-item">
+                                <li>
+                                    <a href="javascript:;">出境旅游</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">国内游</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">周边游</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">门票</a>
+                                </li>
+                                 <li>
+                                    <a href="javascript:;">团队定制</a>
+                                </li>
+                                 <li>
+                                    <a href="javascript:;">自由行打包</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                         <li>
+                            <h4>
+                                <a href="javascript:;"><i class="ico-shan"></i>跨境商城</a></h4>
+                        </li>
+                         <li>
+                            <h4><a href="javascript:;"><i class="ico-ta"></i>其他业务</a></h4>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <ul class="nav-sel">
+                <li data-target="one_way" class="active">单程</li>
+                <li data-target="Round_trip">往返</li>
+            </ul>
+            <nav class="nav_list">
+                <div class="nav-item">
+                    <div class="panel-L fl">
+                        <span class="txt">出发城市</span>
+                        <input type="text" class="city SelectCity" value="东京">
+                       
+                    </div>
+                    <div class="panel-C">
+                        <i class="ico_huan"></i>
+                        <i class="ico-duart"></i>
+                    </div>
+                    <div class="panel-R fr">
+                        <span class="txt">到达城市</span>
+                        <input type="text" class="city SelectCity" value="武汉">
+                    </div>
+                </div>
+                <div class="nav-item data-wrap">
+                    <div class="panel-L fl" id="startDate">
+                        <div class="table-cell w30">
+                             <i class="ico-data"></i>
+                            <strong class="days">16</strong>
+                        </div>
+                        <div class="table-cell">
+                            <div>
+                                <p>星期三</p>
+                                <p class="years">2017.08</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>     
+            </nav>
+            <div class="search_btn">
+
+                <a href="javascript:;"><i class="ico-search"></i>预定搜索</a>
+                
+            </div>
+           
+            <section class="modul-wrap">
+                    <div class="title">
+                        <h4 class="fl">
+                            <i class="ico-you"></i>
+                            旅行目的地
+                        </h4>
+                        <em></em>
+                        <a href="javascript:;" class="fr">more</a>
+                    </div>
+                    <ul class="content clearfix">
+                       <li>
+                           <a href="javascript:;" alt="">
+                               <img src="images/nav-ico0.png" alt="">
+                           </a>
+                           <p>马来西亚</p>
+                       </li>
+                       <li>
+                           <a href="javascript:;" alt="">
+                               <img src="images/nav-ico1.png" alt="">
+                           </a>
+                           <p>法国美食</p>
+                       </li>
+                       <li>
+                           <a href="javascript:;" alt="">
+                               <img src="images/nav-ico2.png" alt="">
+                           </a>
+                           <p>台湾</p>
+                       </li>
+                    </ul>
+                    <!-- 特价机票 -->
+                    <div class="title">
+                        <h4 class="fl">
+                            <i class="ico-hui"></i>
+                            特价机票
+                        </h4>
+                        <em></em>
+                        <a href="javascript:;" class="fr">more</a>
+                    </div>
+                     <ul class="air_list clearfix">
+                       <li>
+                            <div class="fl air_img">
+                                <a href="javascript:;">
+                                    <img src="images/nav-ico3.png" alt="">
+                                </a>
+                                
+                            </div>
+                            <div class="fl air-info">
+                                <div class="info-name"><span>东京</span>-<span>普吉岛</span><i class="ico-air"></i></div>
+                                <p><span>￥<em>5025</em></span>含税起</p>
+                                <i class="ico-next"></i>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="fl air_img">
+                                <a href="javascript:;">
+                                    <img src="images/nav-ico4.png" alt="">
+                                </a>
+                                
+                            </div>
+                            <div class="fl air-info">
+                                <div class="info-name"><span>东京</span>-<span>普吉岛</span><i class="ico-air"></i></div>
+                                <p><span>￥<em>5025</em></span>含税起</p>
+                                <i class="ico-next"></i>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="fl air_img">
+                                <a href="javascript:;">
+                                    <img src="images/nav-ico5.png" alt="">
+                                </a>
+                                
+                            </div>
+                            <div class="fl air-info">
+                                <div class="info-name"><span>东京</span>-<span>普吉岛</span><i class="ico-air"></i></div>
+                                <p><span>￥<em>5025</em></span>含税起</p>
+                                <i class="ico-next"></i>
+                            </div>
+                          
+                        </li>
+                    </ul>
+             </section>
+            <div class="follow">
+               <p class="follow_us">Follow us</p>
+               <div class="link_list">
+                   <a href="javascript:;"><i class="twitte"></i></a>
+                   <a href="javascript:;"><i class="facebook"></i></a>
+                   <a href="javascript:;"><i class="google"></i></a>
+                   <a href="javascript:;"><i class="weixin"></i></a>
+                   <a href="javascript:;"><i class="weibo"></i></a>
+               </div>
+               <p class="about"><a href="javascript:;">关于我们</a>|<a href="javascript:;">联系我们</a></p>
+               <p class="copy">Copyright © 2016 SEIKO WORLD Co.,Ltd. All Rights Reserved.   技术支持：云林科技</p>
+            </div>
+            <footer>
+                <div class="bottomMenu">
+                    <ul>
+                        <li>
+                            <a href="首页.html">
+                                <i class="ico-home"></i>
+                                <p>首页</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="ico-ask"></i>
+                                <p>机票预订</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="个人中心.html">
+                                <i class="ico-personcenter"></i>
+                                <p>个人中心</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+       <div class="global" id="calendar" style="display: none;">
+            <div class="topside" style="position: fixed;top:0;width:100%;z-index: 1003;left:0;">
+                <div class="toback"><a href="javascript:;"><i class="ico-back"></i>返回</a></div>
+                <div class="pagetitle" data=""><b>日期选择</b></div>        
+            </div>
+            <!-- 时间控件 -->
+            <div class="NGD_calendar">
+                <div class="NGD_calendar_fullscreen">
+                    <ul class="tag_week">
+                        <li>六</li>
+                        <li>日</li>
+                        <li>一</li>
+                        <li>二</li>
+                        <li>三</li>
+                        <li>四</li>
+                        <li>五</li> 
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/materialMenu.min.js" ></script>
+        <script type="text/javascript" src="js/City.js"></script>
+        <script type="text/javascript" src="js/NGD_calendar.js"></script>
+        <script type="text/javascript">
+        $(".SelectCity").kuCity();
+        var type=0;
+        var menu = new Menu;
+         // 侧边导航
+         $("#nav-menu").on("click","h4",function(){
+            var $that = $(this);
+            var $ul = $that.siblings("ul");
+            var $ico = $that.find(".ico-nav")
+            if ($ul.is(":hidden")) {
+                $ul.slideDown(150);;
+                $ico.css("transform","rotateZ(180deg)")
+            }else{
+                $ul.slideUp(150);
+                $ico.css("transform","rotateZ(0deg)")
+            }
+         })
+         // 单/返
+        $(".nav-sel").on("click","li",function(){
+             var htmladd= "";
+            htmladd +='<div class="panel-R fr" id="endDate">';
+            htmladd +='<div class="table-cell fr"><div><p>星期三</p> <p class="years">2017.08</p></div></div>';
+            htmladd +=' <div class="table-cell w30 fr"> <i class="ico-data"></i><strong class="days">16</strong></div>';
+            htmladd +=' </div>';
+            var $that = $(this), target = $that.data('target');
+            $that.addClass("active").siblings("li").removeClass("active");
+            var $wrap = $(".data-wrap");
+             switch(target){
+                case 'one_way':
+                    $(".data-wrap .panel-R").remove();
+                break;
+                case 'Round_trip':
+                    $wrap.append(htmladd)
+                break;           
+            }
+            $("#endDate").click(function(){
+                type=2;
+                console.log($("#startDate").find(".years").text())
+                if($("#startDate").find(".years").text()==""||$("#startDate").find(".years").text()==null)
+                {
+                    $("#startDate").focus();
+                    ShowMsg("请选择出发日期");
+                    return false;
+                }
+                $("#indexPage").hide();
+                $("#calendar").show();
+                var n = $("#startDate").attr('data').match(/^(\d{4})(\d{2})(\d{2})$/);
+                var iDate = new Date(n[1],n[2]-1,n[3]);
+                calendar(iDate); 
+            })
+        })
+        $("#startDate").click(function(){
+            type=1;
+            $("#indexPage").hide();
+            $("#calendar").show();
+            var nowDate=new Date();
+            calendar(nowDate); 
+        })
+
+        $(".toback",$("#calendar")).unbind("click").click(function(){
+            $("#calendar").hide();
+            $("#indexPage").show();
+        })
+        function calendar(iDate){
+    $(".NGD_calendar_box").empty();
+    iDate = new Date(iDate.getFullYear(), iDate.getMonth(), iDate.getDate());
+    var selectDate = null;
+    var startDate_1=new Date(iDate.getFullYear(),iDate.getMonth(),1);
+    var fullscreen_calendar=$(".NGD_calendar_fullscreen").NGD_calendar({
+        months:6,
+        startWeek:6,
+        event:"show",
+        showDateSelect:"text",
+        dateArea:[startDate_1,new Date(startDate_1.getFullYear()+1,startDate_1.getMonth(),startDate_1.getDate())],
+        onSelect:function(e,d){
+            if (e.date - iDate >= 0) {
+                var odate = dateFormat(e.date,"yyyy-MM-dd");
+                var oyear = dateFormat(e.date,"yyyy-MM");
+                var oday = dateFormat(e.date,"dd");
+                $("#calendar .pagetitle").html(odate);
+                selectDate=dateFormat(e.date,"yyyyMMdd");
+                $("#calendar .pagetitle").attr("data",selectDate);
+                fullscreen_calendar.doms.calendarBox.find(".NGD_days_selected_ok").removeClass("NGD_days_selected_ok");
+                e.o.addClass("NGD_days_selected_ok");
+                $("#indexPage").show();
+                 switch(type)
+                {
+                    case 1:
+                        $("#startDate").find(".years").text(oyear);
+                        $("#startDate").find(".days").text(oday);
+                        $("#startDate").attr("data",$("#calendar .pagetitle").attr("data"));
+                        break;
+                    case 2:
+                        $("#endDate").find(".years").text(oyear);
+                        $("#endDate").find(".days").text(oday);
+                        $("#endDate").attr("data",$("#calendar .pagetitle").attr("data"));
+                        break;
+                }
+                $("#calendar").hide();
+            }
+           
+        },
+        dayBinded: function(e) {
+            if (e.date - iDate >= 0) {
+                e.o.addClass("NGD_days_selected_rang");
+                if(type==2)
+                if(e.date-iDate==0)
+                {
+                    e.o.addClass("NGD_days_selected_ok");
+                    $("#calendar .pagetitle").html(dateFormat(e.date,"yyyy-MM-dd"));
+                    selectDate=dateFormat(e.date,"yyyyMMdd");
+                    if(type==2)
+                    console.log(e.date);
+                    $("#calendar .pagetitle").attr("data",selectDate);
+                }
+            }
+            else
+            {
+                e.o.removeClass("NGD_days_selected_rang");
+            }
+        }
+    })
+}
+        </script>
+    </body>
+</html>

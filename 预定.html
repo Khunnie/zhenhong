@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+	<title>日本正宏商事</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/kuCity.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="w1200 header_top clearfix">
+			<div class="logo">
+				<a href="javascript:;">
+					<img src="images/logo.png" alt="">
+				</a>
+			</div>
+			<ul class="head_nav">
+				<li class="active">
+					<a href="javascript:;">首页</a>
+				</li>
+				<li>
+					<a href="javascript:;">机票预订</a>
+					<div class="nav-menu">
+						<a href="javascript:;">国内机票</a>
+						<a href="javascript:;">国际港澳台机票</a>
+						<a href="javascript:;">航班时刻</a>
+						<a href="javascript:;">环球特价</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;">旅游度假</a>
+					<div class="nav-menu">
+						<a href="javascript:;">出境旅游</a>
+						<a href="javascript:;">国内旅游</a>
+						<a href="javascript:;">周边游</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;">自助出游</a>
+				</li>
+				<li>
+					<a href="javascript:;">签证</a>
+				</li>
+			</ul>
+			<div class="head-search">
+				<div class="s_select">
+					<span class="typeName">旅游度假</span>
+					<i class="ico-sel icos"></i>
+					<ul class="search_bar">
+						<li>机票预订</li>
+						<li>自助出游</li>
+						<li>签证</li>
+					</ul>
+				</div>
+				<div class="search_val">
+					<input type="text" name="" placeholder="请输入搜索关键字">
+				</div>
+				<i class="ico-sear icos"></i>
+			</div>
+			<div class="login_menu">
+				<i class="icos ico-user"></i>
+				<a href="javascript:;">会员登录</a>
+			</div>
+		</div>
+	</div>
+	<!-- hover -->
+	<div class="hover_nav"></div>
+  	
+	<!-- 内容-->
+	<section style="background-color: #f4f4f4;">
+		<div class="w1200 clearfix">
+			<ul class="clearfix visa-banner">
+				<li class="banner-t current">乘机信息</li>
+				<li class="banner-q">确认&amp;订单</li>
+				<li class="banner-w">完成预定</li>
+			</ul>
+			<div class="wrapper clearfix">
+				<div class="y-content">
+					<div class="pass">
+						<h4 class="panel-title">乘机人</h4>
+						<div class="pass-grounp pass-list hide">
+							<div class="pass-num">1</div>
+							<table class="pass-item">
+								<tr>
+									<td style="width: 149px;">
+										<div class="arrow">
+											<div>成人</div>
+											<ul class="dropdown">
+												<li>成人</li>
+												<li>儿童(2-12周岁)</li>
+											</ul>
+										</div>
+										
+									</td>
+									<td style="width: 278px;">
+										<div>
+											<span>姓</span>
+											<input type="text" name="" placeholder="Sumame">
+										</div>
+									</td>
+									<td style="width: 278px;">
+										<div>
+											<span>名</span>
+											<input type="text" name="" placeholder="Given name">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="gender">
+											<label>
+												<span class="sel">
+													<input type="radio" name="gender">
+													<i></i>
+												</span>
+												男
+											</label>
+											<label>
+												<span class="sel">
+													<input type="radio" name="gender">
+													<i></i>
+												</span>
+												<input type="radio" name="gender">女
+											</label>
+										</div>
+										
+									</td>
+									<td>
+										<div class="arrow nation">
+											<span class="abName">国籍</span>
+											<div class="pl78">中国大陆China</div>
+											<ul class="dropdown">
+												<li>中国大陆China</li>
+											</ul>
+										</div>
+										
+									</td>
+									<td>
+										<div class="date">
+											<span>出生日期</span>
+											<input type="text" name="" class="form_datetime">
+											<i class="icos ico-calendar"></i>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="arrow">
+											<div>护照</div>
+											<ul class="dropdown">
+												<li>二代身份证</li>
+												<li>护照</li>
+												<li>军人证</li>
+												<li>港澳通行证</li>
+												<li>台胞证</li>
+												<li>回乡证</li>
+												<li>户口簿</li>
+												<li>出生证明</li>
+												<li>台湾通行证</li>
+											</ul>
+										</div>
+									</td>
+									<td>
+										<div>
+											<input type="text" name="" placeholder="证件号码">
+										</div>
+										
+									</td>
+									<td class="date">
+										<div>
+											<span>证件有效期</span>
+											<input type="text" name="" class="form_datetime">
+											<i class="icos ico-calendar"></i>
+										</div>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="tel_Iphone">
+											中国大陆+86
+										</div>
+									</td>
+									<td> 
+										<div>
+											<input type="text" name="" placeholder="手机号码">
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="pass-grounp">
+							<div class="pass-num">1</div>
+							<table class="pass-item">
+								<tr>
+									<td style="width: 149px;">
+										<div class="arrow">
+											<div>成人</div>
+											<ul class="dropdown">
+												<li>成人</li>
+												<li>儿童(2-12周岁)</li>
+											</ul>
+										</div>
+										
+									</td>
+									<td style="width: 278px;">
+										<div>
+											<span>姓</span>
+											<input type="text" name="" placeholder="Sumame">
+										</div>
+									</td>
+									<td style="width: 278px;">
+										<div>
+											<span>名</span>
+											<input type="text" name="" placeholder="Given name">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="gender">
+											<label>
+												<span class="sel">
+													<input type="radio" name="gender">
+													<i></i>
+												</span>
+												男
+											</label>
+											<label>
+												<span class="sel">
+													<input type="radio" name="gender">
+													<i></i>
+												</span>
+												<input type="radio" name="gender">女
+											</label>
+										</div>
+										
+									</td>
+									<td>
+										<div class="arrow nation">
+											<span class="abName">国籍</span>
+											<div class="pl78">中国大陆China</div>
+											<ul class="dropdown">
+												<li>中国大陆China</li>
+											</ul>
+										</div>
+										
+									</td>
+									<td>
+										<div class="date">
+											<span>出生日期</span>
+											<input type="text" name="" class="form_datetime">
+											<i class="icos ico-calendar"></i>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="arrow">
+											<div>护照</div>
+											<ul class="dropdown">
+												<li>二代身份证</li>
+												<li>护照</li>
+												<li>军人证</li>
+												<li>港澳通行证</li>
+												<li>台胞证</li>
+												<li>回乡证</li>
+												<li>户口簿</li>
+												<li>出生证明</li>
+												<li>台湾通行证</li>
+											</ul>
+										</div>
+									</td>
+									<td>
+										<div>
+											<input type="text" name="" placeholder="证件号码">
+										</div>
+										
+									</td>
+									<td class="date">
+										<div>
+											<span>证件有效期</span>
+											<input type="text" name="" class="form_datetime">
+											<i class="icos ico-calendar"></i>
+										</div>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="tel_Iphone">
+											<span>中国大陆+86</span>
+										</div>
+									</td>
+									<td> 
+										<div>
+											<input type="text" name="" placeholder="手机号码">
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="add-num">
+							<button id="add_Btn">添加乘客</button>
+						</div>
+					</div>
+					<div class="pass">
+						<h4 class="panel-title">联系人</h4>
+						<div class="pass-grounp">
+							<table class="pass-item">
+								<tr>
+									<td style="width: 425px;" colspan="2">
+										<div>
+											<input type="text" name="" placeholder="中文或英文姓名">
+										</div>
+										
+									</td>
+									<td style="width: 279px;">
+										<div>
+											<input type="text" name="" placeholder="Email">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="width: 149px;">
+
+										<div class="tel_Iphone">
+											中国大陆<span>+86</span>
+										</div>
+									</td>
+									<td> 
+										<div>
+											<input type="text" name="" placeholder="手机号码">
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="check_Order">
+						<span class="check_yes">
+							<input type="checkbox" name="" >
+							<i></i>
+						</span>
+						<p class="order_confirm">我已阅读托运行李说明,保险经纪委托协议,锂电池及危险品须知,已确认本次所选航班信息、结算信息、以及所填写乘机人信息、联系人信息准确无误,同意按此信息提交订单.</p>
+					</div>
+					<div class="success_wrap">
+						<button class="success_Btn">提交订单</button>
+					</div>
+				</div>
+				<div class="y-aside">
+					<div class="flightinfo">
+						<div class="flight-xc">
+							<h4><i class="icos ico-qu"></i>
+								<span>08-16</span>
+								<span>星期三</span>
+								<span>10:55</span>
+								<span>东京-武汉</span>
+							</h4>
+							<p class="modul"><img src="images/hb.png">全日空航空NH5713(共享)332经济舱</p>
+							<div class="modul_info clearfix">
+								<div class="fl-depart">
+									<div class="table-cell">
+										<span class="hours">13:50</span>
+										<p>东京成田T2</p>
+									</div>
+								</div>
+								<div class="fl-center">
+									<div class="table-cell">
+										<span class="grey">3h15m</span>
+										<i class="icos ico-feiji"></i>
+									</div>
+								</div>
+								<div class="fl-arrive">
+									<div class="table-cell">
+										<span class="hours">16:05</span>
+										<p>天河机场T2</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flight-xc">
+							<h4><i class="icos ico-fan"></i>
+								<span>08-16</span>
+								<span>星期三</span>
+								<span>10:55</span>
+								<span>东京-武汉</span>
+							</h4>
+							<p class="modul"><img src="images/hb.png">全日空航空NH5713(共享)332经济舱</p>
+							<div class="modul_info clearfix">
+								<div class="fl-depart">
+									<div class="table-cell">
+										<span class="hours">13:50</span>
+										<p>东京成田T2</p>
+									</div>
+								</div>
+								<div class="fl-center">
+									<div class="table-cell">
+										<span class="grey">3h15m</span>
+										<i class="icos ico-feiji"></i>
+									</div>
+								</div>
+								<div class="fl-arrive">
+									<div class="table-cell">
+										<span class="hours">16:05</span>
+										<p>天河机场T2</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="price-bd">
+						<dl class="lie">
+							<dt>
+								<span>成人票</span>
+								<strong>￥3593 x 2</strong>
+							</dt>
+							<dd>
+								<span>票价</span>
+								<strong>￥3269 x 2</strong>
+							</dd>
+							<dd>
+								<span>税费</span>
+								<strong>￥324 x 2</strong>
+							</dd>
+						</dl>
+						<dl class="lie">
+							<dt>
+								<span>手续费</span>
+								<strong>￥170 x 2</strong>
+							</dt>
+						</dl>
+						<div class="total">
+							<span>合计</span>
+							<strong class="Number"><em>￥</em>9790</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="footer">
+		<div class="link_list">
+		    <div class="w1200 clearfix">	
+				<dl>
+					<dt>关于我们</dt>
+					<dd><a href="javascript:;">空中服务</a></dd>
+					<dd><a href="javascript:;">新闻资讯</a></dd>
+					<dd><a href="javascript:;">法律和隐私条款</a></dd>
+					<dd><a href="javascript:;">机上延误客舱应急预案</a></dd>
+					<dd><a href="javascript:;">国内国际运输条件</a></dd>
+				</dl>
+				<dl>
+					<dt>互动支持</dt>
+					<dd><a href="javascript:;">联系我们</a></dd>
+					<dd><a href="javascript:;">常见问题</a></dd>
+					<dd><a href="javascript:;">行李服务</a></dd>
+				</dl>
+				<dl>
+					<dt>友情链接</dt>
+					<dd><a href="javascript:;">友情链接1</a></dd>
+					<dd><a href="javascript:;">友情链接2</a></dd>
+					<dd><a href="javascript:;">友情链接3</a></dd>
+					<dd><a href="javascript:;">友情链接4</a></dd>
+					<dd><a href="javascript:;">友情链接5</a></dd>
+				</dl>
+				<dl>
+					<dt>关注我们</dt>
+					<dd class="list_ico clearfix">
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-twitter"></i>
+							</a>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-facebook"></i>
+							</a>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-google"></i>
+							</a>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-weix"></i>
+							</a>
+							<div class="link_wrap clearfix">
+								<div class="erwm_pic">
+									<img src="images/erweim.jpg" alt="">
+								</div>
+								<div class="link-title">
+									<img src="images/logo.png" alt="" class="tit_pic">
+									<p>官方微信</p>
+								</div>
+							</div>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-weibo"></i>
+							</a>
+						</div>
+						
+					</dd>
+					<dd class="tel_bottom">
+						<div>
+							<i class="icos ico-tel"></i>
+							<em>1-888-948-9299</em>
+						</div>
+					</dd>
+				</dl>
+				
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="w1200">Copyright © 2016 SEIKO WORLD Co.,Ltd. All Rights Reserved.   技术支持：云林科技      観光庁長官登録旅行業第1871号 株式会社 正宏商事（SEIKO WORLD）</div>
+		</div>
+	</div>
+	 <div id='container'></div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script type="text/javascript" src="js/iphone.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$('.tel_Iphone').kuCity();
+		if($('.form_datetime').length>0){
+	        $(".form_datetime").datetimepicker({
+	            language: 'zh-CN',
+	            todayHighlight: true,
+	            format: "yyyy-mm-dd",
+	            autoclose: true,
+	            clearBtn: true,
+	            minuteStep: 10,
+	            pickerPosition:"bottom-left",
+	            minView: "month"
+	        });
+	    
+		}
+	</script>
+</body>
+</html>

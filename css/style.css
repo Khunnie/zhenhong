@@ -1,0 +1,800 @@
+#ticket-bg{
+	width: 100%;
+	height: 263px;
+    background: url(../images/bg-pic.jpg) center center no-repeat #fee6cc;
+}
+.tk_modul{
+	width: 1180px;
+	height: 209px;
+	background: rgba(255,255,255,.8);
+	position: absolute;
+	left: 0;
+	top: 30px;
+	padding: 25px;
+}
+.banner-nav{
+	position: relative;
+}
+.sel_city{
+	margin-top: 10px;
+}
+.sel_city .form_input{
+	width: 170px;
+	float: left;
+	margin-right: 8px;
+}
+.form_input label{
+	color: #666;
+	line-height: 26px;
+}
+.form_input input{
+	width: 170px;
+	height: 32px;
+	border:1px solid #ddd;
+	text-indent:9px;
+}
+.sel_city .ico_huan{
+	width: 22px;
+	height: 22px;
+	margin-top:29px;
+	background-position: -81px 0;
+}
+.tk_modul .sel_num{
+	margin-top: 18px;
+}
+/*机票左侧*/
+.contant{
+	padding-top: 32px;
+	padding-bottom: 93px;
+}
+.aside_list{
+	width: 212px;
+	padding: 18px 29px 18px 25px;
+	background-color: #ffffff;
+	float: left;
+}
+.aside-title{
+	height: 31px;
+	line-height: 31px;
+	font-size: 16px;
+	color: #4e5054;
+}
+.aside_list dl{
+	padding:5px 0 12px;
+	border-bottom: 1px solid #d7e5ec;
+	color: #666;
+}
+.aside_list dl:last-child{
+	border-bottom: none;
+}
+.aside_list dl dt{
+	height: 39px;
+	line-height: 39px;
+}
+.aside_list dl dd{
+	height: 24px;
+	line-height: 24px;
+}
+.img-check{
+	width: 16px;
+	height: 16px;
+	background: url(../images/bg_fuzzy.png);
+	cursor: pointer;
+	margin-top: 4px;
+	margin-right: 13px;
+	float: left;
+}
+.aside_list dl dd span{
+	float: left;
+}
+.aside_list .check{
+	background-position: -20px 0;
+}
+.Modul_list{
+	float: left;
+	margin-left:18px;
+	width: 950px;
+}
+#calendar-wrap{
+	height: 70px;
+	background-color: #fff;
+	position: relative;
+}
+.air_week{
+	position: relative;
+	left: 0;
+	top:0;
+	z-index: 3;
+}
+.icoBtn{
+	width: 11px;
+	height: 18px;
+	background: url(../images/sprie.png);
+	position: absolute;
+	top: 26px;
+}
+.ico-pre{
+	background-position: -72px -344px;
+	left: 9px;
+}
+.ico-next{
+	background-position: -72px -377px;
+	right: 9px;
+}
+.btn_prv,.btn_next{
+	width: 33px;
+	height: 70px;
+	position:relative;
+	float: left;
+}
+.btn_prv:hover .ico-pre{
+	background-position-y:-440px; 
+}
+.btn_next:hover .ico-next{
+	background-position-y:-408px; 
+}
+.air-con{
+	width: 800px;
+	float: left;
+}
+.air-con li{
+	float: left;
+	width: 14.2%;
+	text-align: center;
+	line-height: 21px;
+	padding:13px 0;
+	color: #666666;
+	position: relative;
+}
+.air-con li .tips{
+	position: absolute;
+	top: 5px;
+	right: 0;
+	color: #f80;
+}
+.air-con li:hover a,.air-con li:hover p{
+	color: #50c4f8;
+}
+.air-con li:hover{
+	border-bottom: 3px solid #50c4f8;
+}
+.air-con li strong{
+	font-weight: normal;
+}
+.stacal{	
+	border-left: 1px solid #e5e3e3;
+	height: 72px;
+	padding-left: 17px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.stacal span{
+	display: inline-block;
+	width: 30px;
+	padding-top: 20px;
+}
+.price_date{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor:pointer;
+	z-index: 2;
+}
+.stacal .ico-zgj{
+	vertical-align: baseline;
+}
+#container{
+	position: absolute;
+	left: 0;
+	top: 70px;
+	width: 100%;
+	z-index: 1000;
+}
+/*排序*/
+.filters{
+	background-color: #fff;
+	height: 37px;
+	line-height: 37px;
+	margin-top: 8px;
+	color: #666;
+}
+.filters>div{
+	width: 112px;
+	cursor: pointer;
+}
+.filters .clo-o{
+	width: 167px;
+	padding-left:55px;
+}
+.filters .clo-d{
+	width: auto;
+	padding-right:18px;
+}
+.clo-d p{
+	color: #666;
+}
+/*机票动态*/
+.flightlist{
+	width: 950px;
+	background-color: #fcfcfc;
+	margin-top: 6px;
+}
+.flight-item{
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+.flight-item .L-flight{
+	padding: 20px 0 20px 15px;
+    display: inline-block;
+    
+}
+.flight-item .R-flight {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 200px;
+}
+.L-flight>div{float: left;}
+.hk-name{
+    height: 70px;
+    display: table;
+}
+.hk-logo{
+ 	width: 35px;
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	padding-right: 7px;
+}
+.hk-logo img{
+ 	max-width: 35px;
+ }
+.hk-text{
+ 	width: 180px;
+ 	overflow: inherit;
+    display: table-cell;
+ 	vertical-align: middle;
+ 	line-height: 20px;
+}
+.fl-depart,.fl-arrive{
+ 	width: 100px;
+    min-height: 70px;
+    display: table;
+   text-align: right;
+   color: #666;
+}
+.hours{
+  	font-size: 18px;
+  	color: #333;
+  	font-weight: 600;
+}
+.fl-center{
+ 	width: 115px;
+    height: 70px;
+    padding: 12px 0;
+    box-sizing: border-box;
+    display: table;
+    text-align: center;
+    color: #666;
+}
+.fl-arrive{
+ 	text-align: left;
+ }
+.fl-rate{
+ 	width: 200px;
+ 	height: 70px;
+ 	overflow: inherit;
+    display: table;
+ 	color: #a9a9a9;
+ 	text-align: center;
+ }
+.ico-top{
+ 	width: 7px;
+ 	height: 4px;
+ 	background:url(../images/nav-top.png) no-repeat;
+ 	margin-left:10px;
+ }
+.price-wrap,.price-btn{
+ 	display: table;
+ 	height: 100%;
+ 	float: left;
+ }
+.price{
+ 	width: 110px;
+ 	text-align: right;
+ 	color: #f15b4c;
+ 	font-size: 18px;
+ }
+.price em{
+  	font-size: 12px;
+ }
+.sel-wrap{
+	margin-left: 20px;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f15b4c;
+	text-align: center;
+	border-radius: 4px;
+}
+.sel-wrap:hover{
+	background-color: #f24432;
+}
+.sel-wrap a{
+	color: #fff;
+}
+.detaWrap{
+	padding: 0px 0 10px 15px;
+}
+.deta-logo{
+	width: 35px;
+	height: 100%;
+	padding-right: 7px;
+	float: left;
+	padding-top: 6px;
+}
+.data-info{
+	float: left;
+}
+.data-info dt{
+	height: 25px;
+	line-height: 25px;
+	color: #333;
+}
+ .data-info dd{
+ 	line-height: 24px;
+ 	color: #666;
+ }
+ .data-info dd span{
+ 	margin-right: 52px;
+ }
+.data-info dd p{
+	line-height: 49px;
+	color: #333;
+}
+.deta-item{
+	width: 100%;
+	overflow: hidden;
+}
+.deta-lie{
+	height: 64px;
+	line-height: 64px;
+	padding-left:37px;
+	border-bottom: 1px solid #eee;
+}
+
+.deta-L p,.deta-L span{
+display: inline-block;
+}
+.deta-L p{
+	width: 72px;
+	color: #000000;
+}
+.deta-L span{
+	height: 23px;
+	line-height: 23px;
+	padding: 0 10px;
+	border:1px solid #50c4f8;
+	color: #50c4f8;
+}
+.deta-R .price{
+	display: inline-block;
+	margin-right: 15px;
+}
+.deta-R p{
+	width: 150px;
+	display: inline-block;
+}
+.btn-yd{
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #ffa833;
+	color: #fff;
+	border-radius: 4px;
+	margin-right:10px;
+}
+.btn-yd:hover{
+	background-color: #fa9815;
+}
+/*往返*/
+.trip-info{
+	background-color:#fff;
+}
+.trip-tip{
+	height: 44px;
+	line-height: 44px;
+	color: #333;
+	text-indent: 28px;
+	border-bottom: 1px solid #eee;
+}
+/*预定*/
+.wrapper{
+	padding-bottom: 313px;
+}
+.visa-banner li{
+	width:31.3%;
+	float: left;
+	background: #e5e5e5;
+	height: 44px;
+	line-height: 44px; 
+	text-align: center;
+	position: relative;
+	margin-right:20px;
+	color: #323232;
+	font-size: 16px;
+}
+.visa-banner{
+	margin-right: -20px;
+	padding: 26px 0 23px 0;
+	overflow: hidden;
+}
+.visa-banner li:after,.visa-banner li:before{
+	content:"";
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+.visa-banner li:before{
+	border-left:16px solid #e5e5e5;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	right:-16px;
+}
+.visa-banner li:after{
+	border-left:16px solid transparent;
+	border-top: 22px solid #e5e5e5;
+	border-bottom: 22px solid #e5e5e5;
+	left:-16px;
+}
+.visa-banner .current{
+	background: #f15b4c;
+	color: #fff;
+}
+.visa-banner .current:before{
+	border-left:16px solid #f15b4c;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+	right:-16px;
+}
+.visa-banner .current:after{
+	border-left:16px solid transparent;
+	border-top: 22px solid #f15b4c;
+	border-bottom: 22px solid #f15b4c;
+	left:-16px;
+}
+.y-content{
+	width:796px;
+	float: left;
+}
+.pass{
+	background-color: #fff;
+	border-top: 4px solid #dcf3fe;
+	margin-bottom: 9px;
+	padding-left: 16px;
+	padding-bottom: 29px;
+}
+.pass:nth-of-type(2){
+	border-top: 4px solid #caedfd;
+}
+.panel-title{
+	height: 37px;
+	line-height: 37px;
+	color: #333;
+	font-weight: 700;
+}
+.pass-grounp{
+	position: relative;
+}
+.pass-num{
+	position: absolute;
+	left: 0;
+	top: 18px;
+	width: 20px;
+	height: 20px;
+	background-color: #50c4f8;
+	color: #fff;
+	text-align:center;
+	line-height: 20px;
+	border-radius: 10px;
+}
+.pass-item{
+	position: relative;
+	margin-left:36px;
+}
+.pass-item td{
+	padding-top: 14px;
+	height: 28px;
+	line-height: 28px;
+	padding-right:9px;
+	position: relative;
+}
+.pass-item td>div{
+	height: 28px;
+	line-height: 28px;
+	position:relative;
+	border-bottom: 1px solid #b3d1de;
+	padding-left: 8px;
+	cursor: pointer;
+}
+.gender label{
+	width: 50%;
+	position: relative;
+	float: left;
+	text-indent: 19px;
+}
+.gender label input[type="radio"]{
+	opacity: 0;
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 0;
+}
+.sel{
+	position: absolute;
+	left: 0;
+	top: 9px;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+}
+.sel input[type="radio"]+i::before{
+	content: " ";
+	position: absolute;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10rem;
+    border: 1px solid #c4e0ea;
+    left: 0;
+    top: 0;
+}
+.sel input[type="radio"]:checked+i::before{
+	background-color: #50c4f8;
+}
+.abName{
+	position: absolute;
+	left: 8px;
+	top: 0px;
+	color: #666;
+}
+.arrow,.tel_Iphone{
+	background:url(../images/arrow.png) 0 0 no-repeat;
+	background-position: 119px 12px;
+}
+.nation{
+	background-position: 243px 12px;
+}
+.dropdown{
+	position: absolute;
+	left: 0;
+	top: 29px;
+	width: 100%;
+	background-color: #fff;
+	z-index: 2;
+	cursor: pointer;
+	display: none;
+	border:1px solid #b3d1de;
+	border-top: none;
+	padding-left:8px;
+}
+.dropdown li:hover{
+	color: #f15b4c;
+}
+.nation .dropdown{
+	padding-left: 78px;
+}
+.nation>div{
+	font-weight: 700;
+}
+.date span{
+	position: absolute;
+	left:8px;
+	top: 0;
+	z-index: 2;
+}
+.date input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-indent: 100px;
+}
+.add-num{
+	width: 100%;
+	height: 30px;
+}
+#add_Btn{
+	width: 140px;
+	height: 30px;
+	color: #fff;
+	background-color: #50c4f8;
+	float: right;
+	margin-right:51px;
+	border-radius: 4px;
+}
+.check_Order{
+	margin-top: 33px;
+	position: relative;
+}
+.check_yes{
+	position: absolute;
+	left: 19px;
+	top: 0;
+}
+.check_yes input{
+	opacity: 0;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 0px;
+	z-index: 1;
+}
+.check_yes input[type="checkbox"]+i::before{
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border:1px solid #f7634b;
+}
+.check_yes input[type="checkbox"]:checked+i::before{
+	background: #f7634b url(../images/check.png) 3px 4px no-repeat;
+}
+.order_confirm{
+	padding-left: 48px;
+	line-height: 18px;
+	color: #999999;
+}
+.success_wrap{
+	margin-top: 48px;
+	width: 100%;
+}
+.success_Btn{
+	width: 151px;
+	height: 39px;
+	background-color: #f15b4c;
+	color: #fff;
+	float: right;
+	border-radius: 4px;
+}
+.success_Btn:hover{
+	background-color: #ee4a3a;
+}
+.y-aside{
+	width: 376px;
+	float: right;
+}
+.flightinfo{
+	padding: 0 20px 30px;
+	background-color: #fff;
+	border-top: 4px solid #50c4f8;
+	margin-bottom: 10px;
+}
+.flight-xc{
+	margin-top: 26px;
+	border-bottom: 1px dashed #f2b8b1;
+}
+.flight-xc h4{
+	font-weight: 700;
+	font-size: 16px;
+	height: 27px;
+	line-height: 27px;
+}
+.flight-xc h4 span{margin-right:5px;}
+.modul{
+	padding: 12px 0 ;
+	text-indent: 39px;
+	color: #666666;
+	line-height: 12px;
+}
+.modul_info>div{float: left;}
+.modul_info .fl-center{width: 125px;}
+.ico-feiji{
+	width: 121px;
+    height: 18px;
+    display: block;
+    margin: 0px 11px 0 11px;
+    background-position: -51px -109px;
+}
+.modul_info .fl-depart,.modul_info .fl-arrive{
+	width: 95px;
+}
+.flightinfo .flight-xc:last-child{border-bottom: none;}
+.price-bd{
+	background-color: #fff;
+	padding: 20px;
+}
+.lie{
+	font-size: 14px;
+	border-bottom: 1px dashed #e5e4e4;
+}
+.lie dt{
+	color: #333;
+	height: 34px;
+	line-height: 34px;
+}
+.lie dd{
+	color: #999;
+	height: 34px;
+	line-height: 34px;
+}
+.lie span,.total span{float: left;}
+.lie strong,.total strong{float: right;font-weight: normal;}
+.total{
+	height: 36px;
+	line-height: 36px;
+	margin-top: 10px;
+	color: #333;
+	font-size: 14px;
+}
+.Number{
+	font-size: 21px;
+	color: #f15b4c;
+}
+.Number em{font-size: 12px;}
+/*订单确认*/
+.panel-title .return-on{
+	font-size: 12px;
+	color: #666666;
+	float: right;
+	margin-right: 50px;
+	font-weight: normal;
+}
+.passenger-info{
+	margin-left: 36px;
+	padding: 15px 0;
+}
+.passenger-name{
+	font-size: 14px;
+	height: 39px;
+	line-height: 39px;
+}
+.passenger-info dd{
+	height: 25px;
+	line-height: 25px;
+}
+.passenger-info dd span:nth-of-type(1){
+	font-size: 14px;
+	color: #333333;
+}
+.passenger-info dd span:nth-of-type(2){
+	color: #666666;
+}
+.prop-wrap{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -253px 0 0 -180px;
+	width: 361px;
+	height: 505px;
+	background:url(../images/prop.png) no-repeat;
+	z-index: 1000;
+	display: none;
+}
+.prop-wrap p{
+	color: #f15b4c;
+	font-size: 22px;
+	margin-top: 330px;
+	text-align: center;
+}
+.colse-prop{
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	background: url(../images/close.png) no-repeat;
+	top: 53px;
+	right:41px;
+	cursor: pointer;
+}

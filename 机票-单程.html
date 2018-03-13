@@ -1,0 +1,732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>日本正宏商事</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/kuCity.css">
+	<link rel="stylesheet" type="text/css" href="css/calendar.css">
+	<link rel="stylesheet" type="text/css" href="css/simple-calendar.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="w1200 header_top clearfix">
+			<div class="logo">
+				<a href="javascript:;">
+					<img src="images/logo.png" alt="">
+				</a>
+			</div>
+			<ul class="head_nav">
+				<li class="active">
+					<a href="javascript:;">首页</a>
+				</li>
+				<li>
+					<a href="javascript:;">机票预订</a>
+					<div class="nav-menu">
+						<a href="javascript:;">国内机票</a>
+						<a href="javascript:;">国际港澳台机票</a>
+						<a href="javascript:;">航班时刻</a>
+						<a href="javascript:;">环球特价</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;">旅游度假</a>
+					<div class="nav-menu">
+						<a href="javascript:;">出境旅游</a>
+						<a href="javascript:;">国内旅游</a>
+						<a href="javascript:;">周边游</a>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:;">自助出游</a>
+				</li>
+				<li>
+					<a href="javascript:;">签证</a>
+				</li>
+			</ul>
+			<div class="head-search">
+				<div class="s_select">
+					<span class="typeName">旅游度假</span>
+					<i class="ico-sel icos"></i>
+					<ul class="search_bar">
+						<li>机票预订</li>
+						<li>自助出游</li>
+						<li>签证</li>
+					</ul>
+				</div>
+				<div class="search_val">
+					<input type="text" name="" placeholder="请输入搜索关键字">
+				</div>
+				<i class="ico-sear icos"></i>
+			</div>
+			<div class="login_menu">
+				<i class="icos ico-user"></i>
+				<a href="javascript:;">会员登录</a>
+			</div>
+		</div>
+	</div>
+	<!-- hover -->
+	<div class="hover_nav"></div>
+    <!-- 通栏 -->
+    <div id="ticket-bg">
+    	<div class="w1200 banner-nav clearfix">
+    		<div class="tk_modul">
+    			<div class="search_content">
+    				<!-- 机票预订 -->
+    				<div id="ticket_info">
+    					<div class="tab_form clearfix">
+    						<span class="active" data-target="one_way">单程</span>
+    						<span data-target="Round_trip">往返</span>
+    						<!-- <span data-target="multipass">多程(含缺口程)</span> -->
+    					</div>
+    					<!-- 选择视图 -->
+    					<div class="tab_content">
+    						<div id="one-way">
+    							<!-- start -->
+    							<div class="sel_city clearfix">
+    								<div class="form_input">
+    									<label>出发城市</label>
+    									<input type="text" name="" placeholder="出发城市" class="cityInput">
+    								</div>
+    								<i class="ico_huan icos"></i>
+    								<div class="form_input">
+    									<label>到达城市</label>
+    									<input type="text" name="" placeholder="到达城市" class="cityInput">
+    								</div>
+    								<div class="form_input">
+    									<label>出发日期</label>
+    									<input type="text" name="" placeholder="出发日期" id="startDate" class=" J_calendar">
+    								</div>
+    								<div class="form_input form_date disabled">
+    									<label>返回日期</label>
+    									<input type="text" name="" placeholder="yyyy-mm-dd" disabled="disabled" class="disabled  J_calendar" id="endDate">
+    								</div>
+    							</div>
+    							<!-- end -->
+    						
+							
+    							<div class="sel_num clearfix">
+    								<!-- 成人 -->
+    								<div class="form_select">
+    									<i class="icos ico-sel"></i>
+    									<span class="sel_input">成人</span>
+    									<input type="text" name="" class="sel_value" value="1">
+										<ul class="select_wrap">
+											<li value="1">1</li>
+											<li value="2">2</li>
+											<li value="3">3</li>
+											<li value="4">4</li>
+											<li value="5">5</li>
+											<li value="6">6</li>
+											<li value="7">7</li>
+											<li value="8">8</li>
+										</ul>
+    								</div>
+    								<!-- 儿童 -->
+    								<div class="form_select">
+    									<input type="text" name="" value="1" class="sel_value">
+    									<span class="sel_input">儿童</span>
+    									<i class="icos ico-sel"></i>
+										<ul class="select_wrap">
+											<li value="0">0</li>
+											<li value="1">1</li>
+											<li value="2">2</li>
+											<li value="3">3</li>
+											<li value="4">4</li>
+											<li value="5">5</li>
+											<li value="6">6</li>
+											<li value="7">7</li>
+											<li value="8">8</li>
+										</ul>
+    								</div>
+    								<!-- 婴儿 -->
+    								<div class="form_select">
+    									<input type="text" name="" value="1" class="sel_value">
+    									<span class="sel_input">婴儿</span>
+    									<i class="icos ico-sel"></i>
+										<ul class="select_wrap">
+											<li value="0">0</li>
+											<li value="1">1</li>
+											<li value="2">2</li>
+											<li value="3">3</li>
+										</ul>
+    								</div>
+    								<!-- 舱位 -->
+    								<div class="form_select sel_space">
+    									<input type="text" name="" value="经济舱" class="spa_value">
+    									<span class="spa_input">仓位</span>
+    									<i class="icos ico-sel"></i>
+										<ul class="select_wrap">
+											<li>不限</li>
+											<li>经济舱</li>
+											<li>超级经济舱</li>
+											<li>公务舱</li>
+											<li>头等舱</li>
+										</ul>
+    								</div>
+    								<!-- 搜索 -->
+    								<div class="btn_search">
+    									<a href="javascript:;">搜索</a>
+    								</div>
+    							</div>
+    						</div>
+    						<!-- 多程 -->
+    					
+    					</div>
+    				</div>
+    				<!-- 酒店预订 -->
+    				<div id="hotel_info"></div>
+    			</div>
+
+    		</div>
+    	</div>
+    </div>
+	<!-- 内容-->
+	<section style="background-color: #f4f4f4;">
+		<div class="w1200 clearfix contant">
+			<div class="aside_list">
+				<h4 class="aside-title">
+					<i class="icos ico-xuan"></i>筛选
+				</h4>
+				<dl>
+					<dt>直飞/中转</dt>
+					<dd>
+						<i class="img-check"></i>
+						<span>直飞</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>1程中转</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>2程中转及以上</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>中转时长</dt>
+					<dd>
+						<i class="img-check"></i>
+						<span>0至4小时</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>4至8小时</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>8至12小时</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>12小时以上</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>起飞时段</dt>
+					<dd>
+						<i class="img-check"></i>
+						<span>上午(6:00-12:00)</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>下午(12:00-18:00)</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>晚上(18:00-24:00)</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>到达时段</dt>
+					<dd>
+						<i class="img-check"></i>
+						<span>上午(6:00-12:00)</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>下午(12:00-18:00)</span>
+					</dd>
+					<dd>
+						<i class="img-check"></i>
+						<span>晚上(18:00-24:00)</span>
+					</dd>
+				</dl>
+			</div>
+			<div class="Modul_list">
+				<div id="calendar-wrap">
+					<input type="text" name="" class="price_date">
+					<div class="air_week">
+						<div class="btn_prv">
+							<a href="javascript:;">
+								<i class="icoBtn ico-pre"></i>
+							</a>
+						</div>
+						<div class="air-con">
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<p>
+											<span>12-20</span>
+											<span>周三</span>
+										</p>
+										<strong>￥550</strong>
+										<span class="tips">休</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<p>
+											<span>12-20</span>
+											<span>周三</span>
+										</p>
+										<strong>￥550</strong>
+										<span class="tips">休</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<p>
+											<span>12-20</span>
+											<span>周三</span>
+										</p>
+										<strong>￥550</strong>
+										<span class="tips">休</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<p>
+											<span>12-20</span>
+											<span>周三</span>
+										</p>
+										<strong>￥550</strong>
+										<span class="tips">休</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<p>
+											<span>12-20</span>
+											<span>周三</span>
+										</p>
+										<strong>￥550</strong>
+										<span class="tips">休</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<p>
+											<span>12-20</span>
+											<span>周三</span>
+										</p>
+										<strong>￥550</strong>
+										<span class="tips">休</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<p>
+											<span>12-20</span>
+											<span>周三</span>
+										</p>
+										<strong>￥550</strong>
+										<span class="tips">休</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="btn_next">
+							<a href="javascript:;">
+								<i class="icoBtn ico-next"></i>
+							</a>
+						</div>
+					</div>
+					<div class="stacal">
+						<span>低价日历</span>
+						<i class="icos ico-zgj"></i>
+					</div>
+				</div>
+				<!-- 排序 -->
+				<div class="filters">
+					<div class="clo-o fl">默认排序</div>
+					<div class="clo-t fl">
+						<span>起飞时间</span>
+						<i class="icoimg ico-arrow"></i>
+					</div>
+					<div class="clo-s fl">
+						<span>航程时长</span>
+						<i class="icoimg ico-arrow"></i>
+					</div>
+					<div class="clo-p fl">
+						<span>价格</span>
+						<i class="icoimg ico-arrow"></i>
+					</div>
+					<div class="clo-d fr">
+						<p>当前<em class="red">50</em>条符合条件共计<em class="red">72</em>个航班结果</p>
+					</div>
+				</div>
+				<!-- 动态 -->
+				<div class="flightlist">
+					<div class="flight-item">
+						<div class="L-flight">
+							<div class="hk-name">
+								<div class="hk-logo">
+									<img src="images/hb.png" alt="">
+								</div>
+								<ul class="hk-text">
+									<li>全日空航空</li>
+									<li class="grey">NH937(共享)</li>
+								</ul>
+							</div>
+							<div class="fl-depart">
+								<div class="table-cell">
+									<p class="hours">7:30</p>
+								    <p class="airport">东京成田机场</p>
+								</div>
+								
+							</div>
+							<div class="fl-center">
+								<div class="table-cell">
+									<p class="grey">3小时15分钟</p>
+									<i class="icoimg ico-duart"></i>
+									<span class="fl-info">中转</span>
+								</div>
+								
+							</div>
+							<div class="fl-arrive">
+								<div class="table-cell">
+									<p class="hours">7:30</p>
+									<p class="airport">东京成田机场</p>
+								</div>
+							</div>
+							<div class="fl-rate">
+								<div class="table-cell">
+									<p class="rate-wrap">航班详情<i class="icos ico-top"></i></p>
+								</div>
+							</div>
+						</div>
+						<div class="R-flight">
+							<div class="price-wrap">
+								<div class="table-cell">
+									<div class="price">
+										<em>￥</em>2270
+									</div>
+								</div>
+							</div>
+							<div class="price-btn">
+								<div class="table-cell">
+									<div class="sel-wrap">
+										<a href="javascript:;">预定</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 详情  -->
+						<div class="detaWrap clearfix hide">
+							<div class="deta-item">
+								<div class="deta-logo">
+									<img src="images/hb.png" alt="">
+								</div>
+								<dl class="data-info">
+									<dt>全日空航空 NH5713(共享)332</dt>
+									<dd>
+										<span>08月16日<strong class="strong ml18">14:55 </strong></span>
+										<span>NRT 成田机场T1</span>
+										<span>飞行时长 3小时15分钟</span>
+									</dd>
+									<dd>
+										<span>08月16日<strong class="strong ml18">14:55 </strong></span>
+										<span>NRT 成田机场T1</span>
+										<span>飞行时长 3小时15分钟</span>
+									</dd>
+									<dd>
+										<p>中转 上海 停留  5小时20分钟</p>
+									</dd>
+								</dl>
+							</div>
+							<div class="deta-item">
+								<div class="deta-logo">
+									<img src="images/hb.png" alt="">
+								</div>
+								<dl class="data-info">
+									<dt>全日空航空 NH5713(共享)332</dt>
+									<dd>
+										<span>08月16日<strong class="strong ml18">14:55 </strong></span>
+										<span>NRT 成田机场T1</span>
+										<span>飞行时长 3小时15分钟</span>
+									</dd>
+									<dd>
+										<span>08月16日<strong class="strong ml18">14:55 </strong></span>
+										<span>NRT 成田机场T1</span>
+										<span>飞行时长 3小时15分钟</span>
+									</dd>
+									<dd>
+										<p>中转 上海 停留  5小时20分钟</p>
+									</dd>
+								</dl>
+							</div>
+						</div>	
+					</div>
+					<div class="flight-item">
+						<div class="L-flight">
+							<div class="hk-name">
+								<div class="hk-logo">
+									<img src="images/hb.png" alt="">
+								</div>
+								<ul class="hk-text">
+									<li>全日空航空</li>
+									<li class="grey">NH937(共享)</li>
+								</ul>
+							</div>
+							<div class="fl-depart">
+								<div class="table-cell">
+									<p class="hours">7:30</p>
+								    <p class="airport">东京成田机场</p>
+								</div>
+								
+							</div>
+							<div class="fl-center">
+								<div class="table-cell">
+									<p class="grey">3小时15分钟</p>
+									<i class="icoimg ico-duart"></i>
+									<span class="fl-info">中转</span>
+								</div>
+								
+							</div>
+							<div class="fl-arrive">
+								<div class="table-cell">
+									<p class="hours">7:30</p>
+									<p class="airport">东京成田机场</p>
+								</div>
+							</div>
+							<div class="fl-rate">
+								<div class="table-cell">
+									<p class="rate-wrap">航班详情<i class="icos ico-top"></i></p>
+								</div>
+							</div>
+						</div>
+						<div class="R-flight">
+							<div class="price-wrap">
+								<div class="table-cell">
+									<div class="price">
+										<em>￥</em>2270
+									</div>
+								</div>
+							</div>
+							<div class="price-btn">
+								<div class="table-cell">
+									<div class="sel-wrap">
+										<a href="javascript:;">预定</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 详情  -->
+						<div class="detaWrap clearfix">
+							<div class="deta-item">
+								<div class="deta-lie">
+									<div class="deta-L fl">
+										<p>经济舱</p>
+										<span>行李额两件</span>
+									</div>
+									<div class="deta-R fr">
+										<div class="price">
+											<em>￥</em>2270
+										</div>
+										<p class="grey">参考税费 ￥470</p>
+										<div class="btn-yd">预定</div>
+									</div>
+								</div>
+							</div>
+							<div class="deta-item">
+								<div class="deta-lie">
+									<div class="deta-L fl">
+										<p>经济舱</p>
+										<span>行李额两件</span>
+									</div>
+									<div class="deta-R fr">
+										<div class="price">
+											<em>￥</em>2270
+										</div>
+										<p class="grey">参考税费 ￥470</p>
+										<div class="btn-yd">预定</div>
+									</div>
+								</div>
+							</div>
+							<div class="deta-item">
+								<div class="deta-lie">
+									<div class="deta-L fl">
+										<p>经济舱</p>
+										<span>行李额两件</span>
+									</div>
+									<div class="deta-R fr">
+										<div class="price">
+											<em>￥</em>2270
+										</div>
+										<p class="grey">参考税费 ￥470</p>
+										<div class="btn-yd">预定</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<div class="footer">
+		<div class="link_list">
+		    <div class="w1200 clearfix">	
+				<dl>
+					<dt>关于我们</dt>
+					<dd><a href="javascript:;">空中服务</a></dd>
+					<dd><a href="javascript:;">新闻资讯</a></dd>
+					<dd><a href="javascript:;">法律和隐私条款</a></dd>
+					<dd><a href="javascript:;">机上延误客舱应急预案</a></dd>
+					<dd><a href="javascript:;">国内国际运输条件</a></dd>
+				</dl>
+				<dl>
+					<dt>互动支持</dt>
+					<dd><a href="javascript:;">联系我们</a></dd>
+					<dd><a href="javascript:;">常见问题</a></dd>
+					<dd><a href="javascript:;">行李服务</a></dd>
+				</dl>
+				<dl>
+					<dt>友情链接</dt>
+					<dd><a href="javascript:;">友情链接1</a></dd>
+					<dd><a href="javascript:;">友情链接2</a></dd>
+					<dd><a href="javascript:;">友情链接3</a></dd>
+					<dd><a href="javascript:;">友情链接4</a></dd>
+					<dd><a href="javascript:;">友情链接5</a></dd>
+				</dl>
+				<dl>
+					<dt>关注我们</dt>
+					<dd class="list_ico clearfix">
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-twitter"></i>
+							</a>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-facebook"></i>
+							</a>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-google"></i>
+							</a>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-weix"></i>
+							</a>
+							<div class="link_wrap clearfix">
+								<div class="erwm_pic">
+									<img src="images/erweim.jpg" alt="">
+								</div>
+								<div class="link-title">
+									<img src="images/logo.png" alt="" class="tit_pic">
+									<p>官方微信</p>
+								</div>
+							</div>
+						</div>
+						<div class="link_ico">
+							<a href="javascript:;">
+								<i class="icos ico-weibo"></i>
+							</a>
+						</div>
+						
+					</dd>
+					<dd class="tel_bottom">
+						<div>
+							<i class="icos ico-tel"></i>
+							<em>1-888-948-9299</em>
+						</div>
+					</dd>
+				</dl>
+				
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="w1200">Copyright © 2016 SEIKO WORLD Co.,Ltd. All Rights Reserved.   技术支持：云林科技      観光庁長官登録旅行業第1871号 株式会社 正宏商事（SEIKO WORLD）</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.simpletabs.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/kuCity.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		  $("#tab_sel").Tabs();
+		  $("#outing_info").Tabs();
+		 // 选择城市控件
+		   $('.cityInput').kuCity();
+		  
+		})
+		// // 日历
+		$(function() {
+			saas.calendar({
+				autoRender: false,
+				trigger: '.J_calendar',
+				triggerEvent: 'click',
+				bimonthly: true,
+				template: 'small',
+				cascading: true ,
+				showNumberOfDays: true,
+				cascadingMax: 20,
+				zIndex: 21
+			})
+			saas.calendar({
+				autoRender: false,
+				trigger: '.D_calendar',
+				triggerEvent: 'click',
+				bimonthly: true,
+				template: 'small',
+				cascading: true ,
+				showNumberOfDays: true,
+				cascadingMax: 20,
+				zIndex: 21
+			})
+			saas.calendar({
+				autoRender: false,
+				trigger: '.price_date',
+				triggerEvent: 'click',
+				bimonthly: true,
+	
+				cascading: true ,
+				showNumberOfDays: true,
+				cascadingMax: 20,
+				zIndex: 21
+			})
+			
+		})
+		var LHeight= $(".flight-item").outerHeight();
+		$(".R-flight").height(LHeight)
+		// 时间切换
+		var date = new Date();
+		var show_day = new Array('周六','周日','周一','周二','周三','周四','周五'); 
+	    var strhtml_list = "";
+        for (var i = 0; i < 7; i++) { 
+        	date.setDate(date.getDate() + 1);
+	        showDate =  (date.getMonth() + 1) + '-' + date.getDate();
+            strhtml_list += '<li><a href="javascript:;">'
+            + '<p>' 
+            + '<span class="Dateinfo mr5">'+ showDate +'</span>'
+            + '<span>'+show_day[i]+'</span>'
+            + '</p>'
+            + '<strong>￥550</strong>'
+            + '<span class="tips">休</span>'
+            + '</a></li>';
+        }
+        $(".air-con ul").html(strhtml_list);
+ 	
+	    
+	</script>
+</body>
+</html>

@@ -1,0 +1,626 @@
+/** reset **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, img,b{border:medium none;margin: 0;padding: 0;color:#333;}
+body,button, input, select, textarea{font: 12px/1.5 'Microsoft Yahei',tahoma, Srial, helvetica, sans-serif;}
+body{min-width: 320px;min-height: 480px;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;font-weight: normal;}
+i{display: inline-block;}
+em{font-style:normal;}
+ul, ol{list-style: none;}
+a{text-decoration: none;color:#333;-moz-transition: all 0.2s ease-in;-webkit-transition: all 0.2s ease-in;-o-transition: all 0.2s ease-in;transition: all 0.2s ease-in;
+}
+/*火狐去掉按钮、连接的虚线*/
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {border: 0;outline : 0;} 
+input,button,select,textarea{outline:none;}
+textarea{ resize:none;}
+a { text-decoration: none; color: #333; }
+a{blr:expression(this.onFocus=this.blur());}
+a:focus{outline:none;}
+a.hidefocus{outline:none}
+/*苹果手机按钮默认样式  去掉*/
+ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;border-radius: 0;}
+.button{ border-radius: 0; }
+input{font-family: "微软雅黑";}
+textarea{font-family: "微软雅黑";}
+img{border:0px;  outline-width:0px; vertical-align: top;}
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+}
+body{background-color: #ffffff;}
+.clearfix:after{clear:both;content:"\200B";display:block;height:0;}
+.clearfix{*zoom:1;}
+.overmask{position: fixed;left:0;top:0;width: 100%;height: 100%;background:rgba(0,0,0,.6);z-index: 100;display: none;}
+.fl { float:left;}
+.fr { float:right;}
+.w1200{ width:1180px; margin:0 auto;}
+.show{display: block!important;}
+.hide { display:none!important;}
+.disabled{cursor:not-allowed!important;}
+.red{color: #f15b4c;}
+.grey{color: #999;}
+.mr5{margin-right: 5px;}
+.mr12{margin-right: 12px;}
+.ml18{margin-left: 18px;}
+.pl78{padding-left: 78px;}
+.strong{font-weight: 600;}
+.icos{background-image: url(../images/icos.png);vertical-align: middle;}
+.icoimg{background-image: url(../images/sprie.png); vertical-align: middle;}
+.table-cell{
+	display: table-cell;
+    vertical-align: middle;
+}
+.sel_city input::-webkit-input-placeholder,.sel_data input::-webkit-input-placeholder{color:#333;}
+
+.sel_city input::-moz-input-placeholder,.sel_data input::-moz-input-placeholder{ /* Mozilla Firefox 4 to 18 */
+　　color:#333;
+}
+.sel_city input::-moz-input-placeholder,.sel_data input::-moz-input-placeholder { /* Mozilla Firefox 19+ */
+　　color:#333;
+}
+.sel_city input::-ms-input-placeholder,.sel_data input::-moz-input-placeholder { /* Internet Explorer 10+ */
+　　color:#333;
+}
+.sel_data .disabled::-webkit-input-placeholder{color:#ddd;}
+
+.sel_data .disabled::-moz-input-placeholder{ /* Mozilla Firefox 4 to 18 */
+　　color:#ddd;
+}
+.sel_data .disabled::-moz-input-placeholder { /* Mozilla Firefox 19+ */
+　　color:#ddd;
+}
+.sel_data .disabled::-moz-input-placeholder { /* Internet Explorer 10+ */
+　　color:#ddd;
+}
+/*ico*/
+.ico-user{
+	width: 14px;
+	height: 14px;
+	margin-right: 7px;
+}
+.ico-sel{
+	width: 8px;
+	height: 5px;
+	background-position: 0 -24px;
+	position: absolute;
+	top: 11px;
+	right: 6px;
+}
+.ico-sear{
+	width: 19px;
+	height: 19px;
+	background-position: -28px 0;
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	cursor: pointer;
+}
+.ico_jp{
+	width: 31px;
+	height: 31px;
+	background-position: 0 -35px;
+}
+.ico_jd{
+	width: 31px;
+	height: 31px;
+	background-position: 0 -74px;
+}
+.ico_huan{
+	width: 30px;
+	height: 30px;
+	background-position: 0 -113px;
+	float: left;
+	margin:4px 15px;
+}
+.ico-data{
+	width: 18px;
+	height: 17px;
+	background-position: -182px 0;
+	position: absolute;
+	left: 9px;
+	top: 11px;
+}
+.ico_smhuan{
+	width: 22px;
+	height: 22px;
+	background-position: -81px 0;
+	float: left;
+}
+.ico-hui{
+	width: 31px;
+	height: 31px;
+	background-position: 0 -150px;
+}
+.ico-zgj{
+	width: 18px;
+	height: 35px;
+	background-position: -57px 0; 
+}
+.ico-bi{
+	width: 20px;
+	height: 20px;
+	background-position: -109px 0;
+}
+.ico-you{
+	width: 31px;
+	height: 31px;
+	background-position: 0 -188px;
+}
+.ico-zz{
+	width: 31px;
+	height: 31px;
+	background-position: 0 -225px;
+}
+.ico-zx{
+	width: 31px;
+	height: 31px;
+	background-position: 0 -262px;
+}
+.ico-twitter{
+	width: 20px;
+	height: 19px;
+	background-position:-76px -40px;
+}
+.ico-facebook{
+	width: 20px;
+	height: 19px;
+	background-position:-96px -40px;
+}
+.ico-google{
+	width: 20px;
+	height: 19px;
+	background-position:-116px -40px;
+}
+.ico-weix{
+	width: 20px;
+	height: 19px;
+	background-position:-136px -40px;
+}
+.ico-weibo{
+	width: 20px;
+	height: 19px;
+	background-position:-156px -40px;
+}
+.ico-tel{
+	width: 25px;
+	height: 27px;
+	background-position: -136px 0;
+}
+.ico-xuan{
+	width: 31px;
+	height: 31px;
+	background-position: 0 -298px;
+	margin-right: 14px;
+}
+.ico-arrow{
+	width: 15px;
+	height: 15px;
+	background-position: -31px -57px;
+}
+.ico-duart{
+	width: 96px;
+    height: 16px;
+    display: block;
+    margin: -5px 0 0 11px;
+    background-position: -25px -520px;
+}
+.ico-qu{
+	width: 26px;
+	height: 26px;
+	background-position: 0 -335px;
+	margin-right: 11px;
+}
+.ico-fan{
+	width: 26px;
+	height: 26px;
+	background-position: 0 -369px;
+	margin-right: 11px;
+}
+.ico-calendar{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 8px;
+	right: 11px;
+	background-position: -51px -140px; 
+}
+/*header*/
+.header{
+	height: 50px;
+	background-color: #fff;
+	font-size: 12px;
+}
+.header_top{
+	position: relative;
+}
+.logo{
+	width: 149px;
+	height: 33px;
+	margin-top: 9px;
+	float: left;
+}
+.logo img{width: 100%;height: 100%;}
+.head_nav{
+	line-height: 50px;
+	float: left;
+	margin-left: 22px;
+	font-weight: 700;
+	position: relative;
+}
+.head_nav li{
+	float: left;
+	padding-right: 15px;
+	
+}
+.nav-menu{
+	position: absolute;
+	left: 0;
+	width: 996px;
+	height: 51px;
+	z-index:6;
+	display: none;
+}
+.head_nav a{
+	color: #888;
+	display: inline-block;
+	height: 50px;
+	padding: 0 15px;
+}
+.head_nav .active a,.head_nav a:hover{
+	color: #4e5054;
+	border-bottom: 3px solid #50c4f8;
+}
+.head-search{
+	width: 319px;
+	height: 30px;
+	float: right;
+	border:1px solid #ddd;
+	border-radius: 15px;
+	margin-right:121px;
+	margin-top: 8px;
+	position: relative;
+}
+.nav-menu a{
+	height: 24px;
+	line-height: 24px;
+	font-weight: normal;
+}
+.nav-menu a:hover{
+	background-color: #f05a4c;
+	text-decoration: none;
+	color: #fff;
+	border-bottom: none;
+	border-radius: 4px;
+}
+.s_select{
+	width:89px;
+	height: 26px;
+	line-height: 26px;
+	border-right: 1px solid #eee;
+	float: left;
+	color: #666;
+	margin: 2px 0px;
+	position: relative;
+	cursor: pointer;
+}
+.s_select span{
+	padding-left: 14px;
+}
+.login_menu{
+	position: absolute;
+	top:11px;
+	right: 0px;
+	height: 26px;
+	line-height: 23px;
+	padding:0px 10px;
+	background-color: #f15b4c;
+	color: #fff;
+	border-radius: 3px;
+}
+.login_menu a{color: #fff;vertical-align: middle;}
+.search_bar{
+	border:1px solid #ddd;
+	position: absolute;
+	top: 27px;
+	left: 0;
+	width: 89px;
+	display: none;
+	background-color: #fff;
+	z-index: 3;
+}
+.search_bar li{
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 1px solid #ddd;
+	padding-left: 15px;
+	color: #666;
+}
+.search_bar li:last-child{
+	border-bottom: none;
+}
+.search_bar li:hover{
+	background-color: #efefef;
+	color: #333333;
+}
+.search_val{
+	height: 30px;
+	float: left;
+}
+.search_val input{
+	height: 28px;
+	text-indent: 15px;
+	color:#f25949;
+}
+.search_val input::-webkit-input-placeholder{color:#f25949;}
+
+.search_val input::-moz-input-placeholder{ /* Mozilla Firefox 4 to 18 */
+　　color:#f25949;
+}
+.search_val input::-moz-input-placeholder { /* Mozilla Firefox 19+ */
+　　color:#f25949;
+}
+.search_val input::-ms-input-placeholder { /* Internet Explorer 10+ */
+　　color:#f25949;
+}
+.hover_nav{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 100%;
+	height: 51px;
+	background: rgba(242,238,235,0.9);
+	display: none;
+	z-index: 5;
+}
+/*通栏*/
+.tab_form{
+	position: relative;
+}
+.tab_form span{
+	width: 125px;
+	height: 30px;
+	line-height: 30px;
+	border:1px solid #50c4f8;
+	background-color: #50c4f8;
+	color: #fff;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+.tab_form span.active{
+	background-color: #fff;
+	color: #50c4f8;
+}
+.sel_num{
+	margin-top: 30px;
+}
+.form_select{
+	width:102px;
+	height: 40px;
+	line-height: 38px;
+	border:1px solid #ddd;
+	float: left;
+	position: relative;
+	margin-right:12px;
+	cursor: pointer;
+	background-color: #fff;
+}
+.form_select .ico-sel{
+	top:17px;
+	right: 8px;
+}
+.sel_input,.spa_input{
+	display: block;
+	color: #999999;
+	padding-left:40px;
+}
+.sel_value,.spa_value{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	text-align: center;
+	height: 38px;
+	line-height: 38px;
+	cursor: pointer;
+}
+.sel_space{
+	width: 172px;
+	margin-left: 7px;
+}
+.spa_input{
+	width: 47px;
+	text-align: center;
+	padding-left: 0;
+}
+.spa_value{
+	left: 40px;
+	width:104px;
+	text-align: left;
+}
+.btn_search{
+	width: 128px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #50c4f8;
+	border-radius: 4px;
+	text-align: center;
+	float: left;
+	font-size: 16px;
+	letter-spacing: 6px;
+}
+.btn_search a{
+	color: #fff;
+	display: block;
+}
+.btn_search:hover{
+	background-color: #1ca8e7;
+}
+.select_wrap{
+	width:102px;
+	position: absolute;
+	left: -1px;
+	top: 38px;
+	background: #fff;
+	border:1px solid #ddd;
+	display: none;
+	z-index: 2;
+}
+.select_wrap li{
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid #ddd;
+	padding-left: 16px;
+}
+.select_wrap li:hover{
+	background-color: #efefef;
+	color: #333333;
+}
+.sel_space .select_wrap{
+	width: 172px;
+}
+.sel_space .select_wrap li{
+	padding-left: 40px;
+}
+/*底部*/
+@keyframes all
+{
+	0%{
+		transform: scale(0);
+	}
+	100%	{
+		transform: scale(1);
+	}
+
+} 
+.footer{
+	border-top: 1px solid #d7e5ec;
+	background-color: #f4f4f4;
+}
+.link_list{
+	padding:19px 0;
+}
+.link_list dl{
+	width: 25%;
+	float: left;
+}
+.link_list dl dt{
+	height: 58px;
+	line-height: 58px;
+	color: #666;
+	font-weight: bold;
+}
+.link_list dd>a{
+	color: #999;
+	height: 24px;
+	line-height: 24px;
+}
+#copyright{
+	height: 50px;
+	line-height: 50px;
+	background-color: #da4b3d;
+	color: #fff;
+}
+.link_ico{
+	width: 31px;
+	height: 31px;
+	border:1px solid #b8b8b8;
+	float: left;
+	border-radius: 15px;
+	text-align: center;
+	margin-right:8px;
+	position: relative;
+}
+.link_wrap{
+	width: 201px;
+	position: absolute;
+	top: 45px;
+	left: -130px;
+	padding: 6px;
+	background-color: #fff;
+	border:1px solid #d7e5ec;
+	z-index: 2;
+	transform-origin:top; 
+	animation:hide 1s linear forwards;
+/*	animation:hide 1s linear forwards;
+    -moz-animation: hide 1s;
+    -ms-animation: hide 1s;
+    -o-animation: hide 1s;
+    -webkit-animation:hide 1s;*/
+    cursor: pointer;
+    transform: scale(0);
+}
+.fadin{
+	transform: scale(1);
+	animation: all 1s;
+    -moz-animation: all 1s;
+    -ms-animation:all 1s;
+    -o-animation:all 1s;
+    -webkit-animation: all 1s;
+}
+.link_wrap:after{
+	content: "";
+	position: absolute;
+	top: -11px;
+	left: 70%;
+	width: 14px;
+	height: 12px;
+	background:url(../images/border-top.png) no-repeat;
+}
+.erwm_pic{
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right:13px;
+}
+.tit_pic{
+	width: 96px;
+}
+.link-title{
+	float: left;
+}
+.link-title p{
+	margin-top: 11px;
+	text-align: left;
+}
+.link_ico a i{
+	margin-top: 5px;
+}
+.link_ico:hover{
+	background-color: #50c4f8;
+	border-color: #50c4f8;
+}
+.link_ico:hover .ico-weix{
+	background-position:-136px -59px;
+}
+.link_ico:hover .ico-twitter{
+	background-position: -76px -59px;
+}
+.link_ico:hover .ico-facebook{
+	background-position:-96px -59px;
+}
+.link_ico:hover .ico-google{
+	background-position:-116px -59px;
+}
+.link_ico:hover .ico-weibo{
+	background-position:-156px -59px;
+}
+.link_ico:hover .ico-weix{
+	background-position:-136px -59px;
+}
+.list_ico{
+	padding:6px 0px;
+}
+.tel_bottom{
+	margin-top: 23px;
+	font-size: 16px;
+	color: #f15b4c;
+}
+.tel_bottom em{
+	font-style: oblique;
+}

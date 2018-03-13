@@ -1,0 +1,289 @@
+/*搜索*/
+#bg_pic{
+	width: 100%;
+	height: 500px;
+	 background: url(../images/bg-pic.jpg) center center no-repeat #fee6cc;
+}
+.banner-nav{
+	position: relative;
+}
+.yd_modul{
+	height: 350px;
+	position: absolute;
+	left: 0;
+	top: 84px;
+
+}
+.search_tab{
+	width: 109px;
+	height: 100%;
+	background:rgba(0,0,0,.8);
+	font-size: 16px;
+	float: left;
+	
+}
+.search_tab li.active{
+	background-color: #ffffff;
+	color: #4e5054;
+}
+.search_tab li{
+	height: 100px;
+	text-align: center;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+}
+.selsct_ico{
+	width: 100%;
+	display: block;
+	padding-top: 21px
+}
+.select_name{
+	display: block;
+	padding-top: 9px;
+}
+.search_content{
+	float: left;
+	background-color: #fefbfa;
+	padding:31px 48px 0 16px;
+	min-height: 350px;
+}
+.form_input{height: 40px;border:1px solid #ddd;}
+.tab_content{
+	margin-top: 5px;
+}
+.sel_title,.data_title{
+	height: 36px;
+	line-height: 36px;
+	color: #a7a7a8;
+}
+.sel_title span{
+	width: 360px;
+	display: inline-block;
+}
+.sel_city .form_input{
+	width: 300px;
+	float: left;
+}
+.sel_city .form_input input,.sel_data input{
+	width: 298px;
+	height: 38px;
+	line-height: 38px;
+	text-indent:15px;
+	color: #333;
+}
+
+.data_title span{
+	width: 270px;
+	display: inline-block;
+}
+.sel_data .form_input{
+	width: 250px;
+	float: left;
+	margin-right:21px;
+	position: relative;
+}
+.sel_data .form_input input{
+	width: 248px;
+	text-indent:38px;
+}
+#multipass .form_input{
+	width: 168px;
+}
+#multipass .form_input input{
+	width: 166px;
+}
+/*特价机票*/
+.List_body{
+	margin-top: 35px;
+	margin-bottom: 40px;
+}
+.banner{
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+.title-L h4{
+	display: inline-block;
+	font-size: 15px;
+	color: #4e5054;
+	margin-left: 14px;
+}
+.pro_sel{
+	float: left;
+	margin-right: 49px;
+}
+.pro_sel li{
+	padding: 0 8px;
+	color: #999;
+	float: left;
+	margin: 0 9px;
+	cursor: pointer;
+}
+.pro_sel li.current{
+	color: #50c4f8;
+	border-bottom: 2px solid #50c4f8;
+}
+.more{
+	float: right;
+	margin-right: 6px;
+}
+.more a{
+	color: #666;
+}
+.more a:hover{
+	color: #da4b3d;
+	text-decoration: underline;
+}
+.sel_block{
+	margin-bottom: 15px;
+}
+.sel_block .sel_info{
+	height: 274px;
+	margin-right: -25px;
+}
+.jp_item,.out-item{
+	width: 277px;
+	height: 274px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	margin-right:24px;
+	background-color: #f6f6f6;
+	border-bottom: 3px solid #d7e5ec;
+	transition: all .5s ease; -webkit-transform: translate3d(0px, 0px, 0px); transform: translate3d(0px, 0px, 0px);
+}
+.img-item{
+	width: 100%;
+	height: 185px;
+}
+.img-item img{
+	width: 100%;
+	height: 100%;
+}
+.jp_item:hover,.out-item:hover{
+	box-shadow: 0 0px 20px rgba(0,0,0,.3); 
+	border-bottom-color: #36bae8;
+	-webkit-transform: translate3d(0, -3px, 0);
+	transform: translate3d(0, -3px, 0); 
+}
+.pro_mess{
+	height: 44px;
+	line-height: 44px;
+	padding: 0 13px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.pro_mess a{
+	color: #333;
+}
+.pro_mess:hover a{
+	color: #36bae8;
+	text-decoration: underline;
+}
+.pro_infor{
+	padding: 0 13px;
+	font-size: 20px;
+	height: 24px;
+	line-height: 24px;
+}
+.pro_infor a{
+	color: #f15b4c;
+}
+.pro_infor em{vertical-align: middle;}
+.pro_infor b{
+	color: #f15b4c;
+	font-size: 12px;
+	font-weight: normal;
+}
+/*精彩旅行*/
+.adress_block{
+	height: 279px;
+	margin-bottom:90px;
+	margin-right: -23px;
+}
+.ads-item{
+	float: left;
+	width: 378px;
+	height: 279px;
+	margin-right: 22px;
+	position: relative;
+	overflow: hidden;
+}
+.ads-item img{
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-transform 0.35s; 
+	transition: transform 0.35s;
+}
+.ads-item p{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	margin-top: -24px;
+	font-size: 37px;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	text-shadow: 4px 3px 10px rgba(0,0,0,.6);
+	text-align: center;
+	cursor: pointer;
+}
+.ads-item:hover img{
+	 -webkit-transform: scale(1.05); transform: scale(1.05);
+}
+/*自助出游*/
+.out_block{
+	margin-bottom: 136px;
+}
+.outing_info{
+	width: 876px;
+	margin-right: 25px;
+}
+.info_block{
+	width: 279px;
+}
+.list_info{
+	height: 240px;
+	margin-right: -17px;
+}
+.out-item{
+	width: 207px;
+	height: 240px;
+	margin-right: 16px;
+	background-color: #f4f5f9;
+}
+.out-item .img-item{
+	height: 138px;
+}
+.out-item .pro_mess{
+	height: 40px;
+	padding: 0 8px;
+	-webkit-line-clamp:2;
+	line-height: 20px;
+	margin:10px 0;
+}
+.out-item .pro_infor{
+	font-size: 17px;
+	padding: 0 7px;
+}
+.aside_item{
+	height: 80px;
+	border-bottom: 1px solid #e7e7e9;
+}
+.product{
+	padding-top: 10px;
+	line-height: 18px;
+}
+.aside_item time{
+	height: 30px;
+	line-height: 30px;
+	color: #79808a;
+}
+.aside_box li:hover{
+	background-color: #e9f3f8;
+}
